@@ -4,7 +4,7 @@ import Home from "./pages/Home"
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/digital-love-story">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />

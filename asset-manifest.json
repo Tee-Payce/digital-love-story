@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/digital-love-story/static/css/main.06dbc3cc.css",
+    "main.css": "/digital-love-story/static/css/main.2de85b02.css",
     "main.js": "/digital-love-story/static/js/main.751da09d.js",
     "static/js/453.be2e8a3b.chunk.js": "/digital-love-story/static/js/453.be2e8a3b.chunk.js",
     "static/media/rue1.jpg": "/digital-love-story/static/media/rue1.e8764d2cca4e26976c9e.jpg",
@@ -12,12 +12,12 @@
     "static/media/rueCover.jpeg": "/digital-love-story/static/media/rueCover.23ae1e05586c687bdef7.jpeg",
     "static/media/ruel.jpeg": "/digital-love-story/static/media/ruel.c190e6de86c1ef07fe7e.jpeg",
     "index.html": "/digital-love-story/index.html",
-    "main.06dbc3cc.css.map": "/digital-love-story/static/css/main.06dbc3cc.css.map",
+    "main.2de85b02.css.map": "/digital-love-story/static/css/main.2de85b02.css.map",
     "main.751da09d.js.map": "/digital-love-story/static/js/main.751da09d.js.map",
     "453.be2e8a3b.chunk.js.map": "/digital-love-story/static/js/453.be2e8a3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06dbc3cc.css",
+    "static/css/main.2de85b02.css",
     "static/js/main.751da09d.js"
   ]
 }

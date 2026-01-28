@@ -20,9 +20,10 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.5 }}
         style={{ overflow: 'hidden', padding:20}}
+        className="relative min-h-screen flex flex-col items-center justify-center px-4 py-12"
       >
         <motion.h1
-          className="text-5xl md:text-6xl lg:text-7xl font-serif text-gold text-center mt-16 mb-10 px-4"
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-gold text-center mt-8 mb-6 px-2 leading-tight"
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 1.2 }}
@@ -33,7 +34,7 @@ export default function Home() {
          My love 🤍,
         </motion.h2>
         <motion.p
-          className="text-center text-gray-300 max-w-2xl mx-auto mb-16 px-4"
+          className="backdrop-blur-lg bg-white/5 rounded-3xl p-8 md:p-12 border border-white/10 shadow-2xl max-w-4xl mx-auto text-gray-200 leading-relaxed text-base md:text-lg"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.5 }}
@@ -92,14 +93,18 @@ So this is me, writing this honestly, joyfully, saying: I choose you. Still. Wit
         image={rue5}
         reverse
       />
+      <div className="backdrop-blur-md bg-white/10 rounded-2xl p-6 ml-5 mr-5 border border-white/20 shadow-2xl hover:bg-white/15 transition-all duration-300">
       <motion.h1
-      className="text-gold text-4xl font-serif mb-8 text-center"
+      className="text-gold text-2xl font-serif mb-4 text-center"
         initial={{ scale: 0.9, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 1.2 }}
         >
+          <div className="absolute -left-4 top-1/2 w-1 h-6 bg-gradient-to-b from-gold to-yellow-400 rounded-full transform -translate-y-1/2"></div>
+
           This song carries all the words I cant fully say but feel.
         </motion.h1>
+        </div>
       <VideoSection
       title="i dedicate this song to you ❤️🫂"
       video={dade}

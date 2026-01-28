@@ -92,8 +92,16 @@ So this is me, writing this honestly, joyfully, saying: I choose you. Still. Wit
         image={rue5}
         reverse
       />
+      <motion.h1
+      className="text-gold text-4xl font-serif mb-8 text-center"
+        initial={{ scale: 0.9, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.2 }}
+        >
+          This song carries all the words I cant fully say but feel.
+        </motion.h1>
       <VideoSection
-      title="This song carries all the words I cant fully say but feel."
+      title="i dedicate this song to you ❤️🫂"
       video={dade}
       />
       <StorySection

@@ -1,10 +1,25 @@
 import { motion } from "framer-motion"
+import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import rueCover from "../assets/rueCover.jpeg"
 
 export default function Login() {
+  const [username, setUsername] = useState("")
+  const [password, setPassword] = useState("")
+  const [error, setError] = useState("")
+  const navigate = useNavigate()
+
   const handleLogin = () => {
-    localStorage.setItem("auth", "true")
-    window.location.href = "/home"
+    const normalizedUsername = username.toLowerCase().replace(/\s+/g, '')
+    const validUsernames = ['christmasmiracle', 'christmas miracle', 'christmasmiracl', 'christmasmiraclle']
+    const validPassword = ['01012026', '01-01-2026', '01/01/2026']
+
+    if (validUsernames.some(valid => normalizedUsername.includes(valid.replace(/\s+/g, ''))) && (password === validPassword[0] || password === validPassword[1] || password === validPassword[2])) {
+      localStorage.setItem("auth", "true")
+      navigate("/home")
+    } else {
+      setError("Invalid credentials. Try again!")
+    }
   }
 
   return (
@@ -26,9 +41,12 @@ export default function Login() {
           I made this special page just for us.
           Please enter our secret to continue...
         </p>
+        {error && <p className="text-red-400 mb-2 text-sm">{error}</p>}
         <input
           type="text"
           placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
           autoComplete="off"
           className="w-full bg-black bg-opacity-30 backdrop-blur-sm border border-gold p-3 text-white mb-2 rounded"
         />
@@ -38,10 +56,12 @@ export default function Login() {
         <input
           type="password"
           placeholder="enter our special date"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
           className="w-full bg-black bg-opacity-30 backdrop-blur-sm border border-gold p-3 text-white mb-2 rounded"
         />
         <p className="text-graysoft mb-6 text-xs text-left">
-          hint: Our Anniversary Date YYYYMMDD
+          hint: Our Anniversary Date DDMMYYYY
         </p>
 
         <button

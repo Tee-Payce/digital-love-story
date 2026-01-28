@@ -7,6 +7,7 @@ import rue3 from "../assets/rue3.jpeg"
 import rue4 from "../assets/rue4.jpeg"
 import r3 from "../assets/ruel.jpeg"
 import rue5 from "../assets/rue5.jpeg"
+import dade from "../assets/dade.mp4"
 
 import { motion } from "framer-motion"
 import { i } from "framer-motion/client"
@@ -90,6 +91,10 @@ So this is me, writing this honestly, joyfully, saying: I choose you. Still. Wit
         text="If we survived this pizza, we can survive anything 🤣🤣🙌"
         image={rue5}
         reverse
+      />
+      <VideoSection
+      title="This song carries all the words I cant fully say but feel."
+      video={dade}
       />
       <StorySection
         title="Happy Ever After"

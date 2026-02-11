@@ -1,7 +1,6 @@
 import StorySection from "../components/StorySection"
 import VideoSection from "../components/VideoSection"
 import Finale from "../components/Finale"
-import rue1 from "../assets/rue1.jpg"
 import rue2 from "../assets/rue2.jpeg"
 import rue3 from "../assets/rue3.jpeg"
 import rue4 from "../assets/rue4.jpeg"
@@ -10,7 +9,6 @@ import rue5 from "../assets/rue5.jpeg"
 import dade from "../assets/dade.mp4"
 
 import { motion } from "framer-motion"
-import { i } from "framer-motion/client"
 
 export default function Home() {
   return (

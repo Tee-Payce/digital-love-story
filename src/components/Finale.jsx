@@ -11,6 +11,7 @@ export default function Finale() {
   }
 
   return (
+    <>
     <section 
       className="min-h-screen relative flex flex-col items-center justify-center text-center px-6"
       style={{
@@ -47,6 +48,13 @@ export default function Finale() {
           </button>
         </div>
       </div>
+      
     </section>
+    <footer className="p-6 text-center text-sm text-white bg-black/50 backdrop-blur-sm border-t border-white/10 space-y-2">
+      <div>For Ruramai from Rue — © {new Date().getFullYear()}</div>
+      <div>Products of </div>
+      <div className="text-blue">the <a href="https://tee-payce.github.io/pro_portfolio/">Destiny Changers Nation</a> ✨</div>
+    </footer>
+    </>
   )
 }
